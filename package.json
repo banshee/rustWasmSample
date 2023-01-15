@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "private": true,
+  "version": "1",
+  "workspaces": [
+    "rust/pkg",
+    "ts"
+  ],
+  "nohoist": [
+    "**/@nomiclabs/**",
+    "**/typescript",
+    "**/ts-node"
+  ],
+  "packageManager": "npm@9.2.0",
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1"
+  }
+}
