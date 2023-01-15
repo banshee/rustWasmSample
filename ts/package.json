@@ -23,6 +23,7 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
+    "banshee-nom-sample": "0.1.0",
     "tsconfig-paths": "^4.1.0"
   }
 }

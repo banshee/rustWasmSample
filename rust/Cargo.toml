@@ -1,5 +1,5 @@
 [package]
-name = "nom-sample"
+name = "banshee-nom-sample"
 version = "0.1.0"
 authors = ["James Moore <james@banshee.com>"]
 edition = "2021"

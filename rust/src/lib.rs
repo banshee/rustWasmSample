@@ -14,6 +14,6 @@ extern {
 }
 
 #[wasm_bindgen]
-pub fn greet() {
-    alert("Hello, nom-sample!");
+pub fn rust_code_goes_here() -> String {
+    "Rust!".into()
 }
