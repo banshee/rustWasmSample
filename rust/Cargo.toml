@@ -2,7 +2,7 @@
 name = "nom-sample"
 version = "0.1.0"
 authors = ["James Moore <james@banshee.com>"]
-edition = "2023"
+edition = "2021"
 
 [lib]
 crate-type = ["cdylib", "rlib"]

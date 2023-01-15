@@ -1,1 +1,1 @@
-Initial commit
+Based on the tutorial at https://rustwasm.github.io/docs/wasm-pack/tutorials/hybrid-applications-with-webpack/getting-started.html
