@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "private": true,
+  "version": "1",
+  "workspaces": [
+    "rust/rust-nom-sample/pkg_bundler",
+    "rust/rust-nom-sample/pkg_nodejs",
+    "rust/rust-nom-sample/pkg_web",
+    "ts",
+    "nextjs-plus-rust"
+  ],
+  "nohoist": [
+    "**/@nomiclabs/**",
+    "**/typescript",
+    "**/ts-node"
+  ],
+  "packageManager": "npm@9.2.0",
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "target": "es6",
+    "baseUrl": "./src/",
+    "module": "ESNext",
+    "paths": {
+      "*": [
+        "*"
+      ]
+    },
+    "types": [
+      "mocha"
+    ],
+    "declarationMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    //    "noUnusedLocals": true,
+    "lib": [
+      "dom",
+      "ESNext"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "test/**/*"
+  ],
+  "allowJs": true
+}
