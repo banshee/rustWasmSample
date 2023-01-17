@@ -4,6 +4,7 @@
   "version": "1",
   "workspaces": [
     "rust/pkg",
+    "rust/your-package-name/pkg",
     "ts"
   ],
   "nohoist": [
