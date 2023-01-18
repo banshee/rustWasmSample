@@ -12,7 +12,7 @@ static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 #[wasm_bindgen]
 pub fn this_is_a_rust_function() -> String {
-    "Rust!".into()
+    "This string is generated in Rust".into()
 }
 
 
