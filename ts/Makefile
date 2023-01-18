@@ -1,11 +1,4 @@
-.PHONY: all
-all:
-	-ts-node --esm src/trivial_typescript.ts
-	-ts-node --esm src/plain.js
-	-ts-node --esm src/plain.ts
+.PHONY: test
 
-foo:
-	ts-node --esm /home/james/workspace/rustWasmSample/node_modules/mocha/bin/mocha.js --require ts-node/register --extension ts --loader=ts-node/esm  test/test_wasm.ts
-
-bar:
-	ts-node --esm test/test_wasm.ts
+test:
+	node /home/james/workspace/rustWasmSample/node_modules/mocha/bin/mocha.js --require ts-node/register --extension ts --loader=ts-node/esm --ui bdd --reporter /home/james/.local/share/JetBrains/Toolbox/apps/WebStorm/ch-0/223.8214.51/plugins/nodeJS/js/mocha-intellij/lib/mochaIntellijReporter.js

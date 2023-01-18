@@ -2,17 +2,10 @@ use wasm_bindgen::prelude::*;
 use web_sys::console;
 
 
-// When the `wee_alloc` feature is enabled, this uses `wee_alloc` as the global
-// allocator.
-//
-// If you don't want to use `wee_alloc`, you can safely delete this.
-#[cfg(feature = "wee_alloc")]
-#[global_allocator]
-static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
-
 #[wasm_bindgen]
 pub fn this_is_a_rust_function() -> String {
-    "This string is generated in Rust".into()
+    let result: String = "This string is generated in Rust".into();
+    dbg!(result)
 }
 
 
@@ -29,4 +22,15 @@ pub fn main_js() -> Result<(), JsValue> {
     console::log_1(&JsValue::from_str("Hello world! - from lib.rs, main_js, marked with #[wasm_bindgen(start)]"));
 
     Ok(())
+}
+
+#[cfg(test)]
+mod tests {
+    use crate::this_is_a_rust_function;
+
+    #[test]
+    fn test_todo_list() {
+        let s = this_is_a_rust_function();
+        assert_eq!("This string is generated in Rust", dbg!(s));
+    }
 }
