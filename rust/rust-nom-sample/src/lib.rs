@@ -26,7 +26,7 @@ pub fn main_js() -> Result<(), JsValue> {
 
 
     // Your code goes here!
-    console::log_1(&JsValue::from_str("Hello world!"));
+    console::log_1(&JsValue::from_str("Hello world! - from lib.rs, main_js, marked with #[wasm_bindgen(start)]"));
 
     Ok(())
 }

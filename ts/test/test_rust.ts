@@ -1,7 +1,6 @@
 import {describe} from "mocha"
 import {expect} from "chai"
 import * as RustCode from "@banshee.com-nodejs/rust-nom-sample"
-import * as Xr from "./import_me"
 
 describe("Using rust code", () => {
     describe("basic functionality", async () => {
