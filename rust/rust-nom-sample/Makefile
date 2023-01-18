@@ -3,6 +3,6 @@ output=pkg_bundler/package.json pkg_bundler/README.md pkg_bundler/rust_nom_sampl
 .PHONY: all
 all: $(output)
 
-$(output) &: src/lib.rs
+$(output) &: src/lib.rs Makefile
 	for mode in bundler nodejs ; do wasm-pack build -d pkg_$$mode -t $$mode -s banshee.com-$$mode ; done
 	touch $(output)

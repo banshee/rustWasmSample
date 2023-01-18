@@ -4,6 +4,7 @@
   "version": "1",
   "workspaces": [
     "rust/rust-nom-sample/pkg_bundler",
+    "rust/rust-nom-sample/pkg_nodejs",
     "ts",
     "nextjs-plus-rust"
   ],
