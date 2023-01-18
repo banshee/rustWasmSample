@@ -10,6 +10,11 @@ use web_sys::console;
 #[global_allocator]
 static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
+#[wasm_bindgen]
+pub fn this_is_a_rust_function() -> String {
+    "Rust!".into()
+}
+
 
 // This is like the `main` function, except for JavaScript.
 #[wasm_bindgen(start)]

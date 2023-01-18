@@ -1,11 +1,17 @@
 {
   "extends": "@tsconfig/node16/tsconfig.json",
   "compilerOptions": {
-    "target": "es2015",
+    "target": "es6",
     "baseUrl": "./src/",
+    "module": "ESNext",
     "paths": {
-      "*": ["*"]
+      "*": [
+        "*"
+      ]
     },
+    "types": [
+      "mocha"
+    ],
     "declarationMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -19,10 +25,13 @@
     "strictPropertyInitialization": true,
     //    "noUnusedLocals": true,
     "lib": [
-      "ES2018",
-      "ES2018.AsyncGenerator",
-      "ES2021"
+      "dom",
+      "ESNext"
     ]
   },
-  "allowJs": true,
+  "include": [
+    "src/**/*",
+    "test/**/*"
+  ],
+  "allowJs": true
 }

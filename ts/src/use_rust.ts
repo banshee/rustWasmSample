@@ -1,6 +1,6 @@
-import * as RustCode from "rust-webpack-template"
+import * as RustCode from "@banshee.com-nodejs/rust-nom-sample"
 
 export function do_rust_thing(): string {
     // return "not rust"
-    return RustCode.rust_code_goes_here()
+    return RustCode.this_is_a_rust_function()
 }
