@@ -3,9 +3,9 @@
   "private": true,
   "version": "1",
   "workspaces": [
-    "rust/pkg",
-    "rust/your-package-name/pkg",
-    "ts"
+    "rust/rust-nom-sample/pkg_bundler",
+    "ts",
+    "nextjs-plus-rust"
   ],
   "nohoist": [
     "**/@nomiclabs/**",
