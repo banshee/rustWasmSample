@@ -5,6 +5,7 @@
   "workspaces": [
     "rust/rust-nom-sample/pkg_bundler",
     "rust/rust-nom-sample/pkg_nodejs",
+    "rust/rust-nom-sample/pkg_web",
     "ts",
     "nextjs-plus-rust"
   ],

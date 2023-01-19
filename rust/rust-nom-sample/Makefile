@@ -5,5 +5,5 @@ all: $(output)
 
 $(output) &: src/lib.rs Makefile Cargo.toml
 	cargo build
-	for mode in bundler nodejs ; do wasm-pack build -d pkg_$$mode -t $$mode -s banshee.com-$$mode ; done
+	for mode in bundler nodejs web; do wasm-pack build -d pkg_$$mode -t $$mode -s banshee.com-$$mode ; done
 	touch $(output)
