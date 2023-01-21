@@ -3,7 +3,7 @@
 name = "rust-nom-sample"
 description = "A sample of Rust code using nom running in a browser"
 version = "0.1.0"
-authors = ["You <you@example.com>"]
+authors = ["You From Cargo.toml<you@example.com>"]
 categories = ["wasm"]
 readme = "README.md"
 edition = "2018"

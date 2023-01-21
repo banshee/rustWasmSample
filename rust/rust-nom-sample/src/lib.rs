@@ -29,7 +29,7 @@ mod tests {
     use crate::this_is_a_rust_function;
 
     #[test]
-    fn test_todo_list() {
+    fn test_this_is_a_rust_function() {
         let s = this_is_a_rust_function();
         assert_eq!("This string is generated in Rust", dbg!(s));
     }
